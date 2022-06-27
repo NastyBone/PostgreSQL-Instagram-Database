@@ -1,0 +1,24 @@
+http://localhost:3005/users/
+
+###
+
+POST http://localhost:3005/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "about to be deleted",
+    "bio": "bye bye"
+}
+
+###
+PUT http://localhost:3005/users/3 HTTP/1.1
+content-type: application/json
+
+{
+    "username": "John117",
+    "bio": "Not a banana anymore"
+}
+
+###
+DELETE http://localhost:3005/users/4 HTTP/1.1
+
